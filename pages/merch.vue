@@ -1,48 +1,136 @@
 <template>
-  <div style="min-height:100vh;background:#faf9ff;">
+  <div class="min-h-screen bg-[#faf9ff] font-sans pb-12">
     <AppNavbar />
 
-    <section style="background:linear-gradient(135deg,#6C2BD9 0%,#D946EF 100%);padding:80px 20px;text-align:center;">
-      <div style="max-width:700px;margin:0 auto;">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:9999px;padding:6px 16px;font-size:0.8rem;color:#fff;font-weight:600;margin-bottom:20px;letter-spacing:0.04em;">
-          👕 FORTRESS MERCH
+    <!-- Hero Section -->
+    <section class="w-full px-4 sm:px-6 lg:px-8 mt-8 mb-12">
+      <div class="relative bg-white rounded-3xl overflow-hidden shadow-sm flex flex-col md:flex-row items-center min-h-[400px]">
+        <!-- Background Image (merchheader.png) -->
+        <div class="absolute inset-0 z-0">
+          <img src="/merchhead.png?" alt="Header Background" class="w-full h-full object-cover object-right" />
         </div>
-        <h1 style="font-size:clamp(2rem,5vw,3.2rem);font-weight:800;color:#fff;margin:0 0 16px;line-height:1.15;">Rep the Brand</h1>
-        <p style="color:rgba(255,255,255,0.85);font-size:1.05rem;margin:0 auto;max-width:500px;line-height:1.7;">
-          Official Fortress Designs merch. Wear what you believe in.
-        </p>
-        <div style="margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
-          <NuxtLink to="/shop" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#6C2BD9;padding:12px 28px;border-radius:9999px;font-weight:700;font-size:0.95rem;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.15);">
-            🛒 Shop Now
-          </NuxtLink>
-          <a href="https://www.youtube.com/@daleam2934" target="_blank" rel="noopener noreferrer"
-            style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);border:1.5px solid rgba(255,255,255,0.4);color:#fff;padding:12px 28px;border-radius:9999px;font-weight:700;font-size:0.95rem;text-decoration:none;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
-            Watch on YouTube
-          </a>
+        
+        <!-- Content -->
+        <div class="relative z-10 w-full md:w-1/2 lg:w-[55%] xl:w-1/2 p-8 md:p-12 lg:pl-16 flex flex-col justify-center">
+          <p class="text-primary font-bold tracking-widest text-sm mb-2 uppercase">Welcome To</p>
+          <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight leading-tight">Official Merch</h1>
+          <p class="text-lg md:text-xl text-gray-700 mb-5 leading-snug">
+            From the music to the message.<br/>
+            Support Dale Honeyghan.
+          </p>
+          <p class="text-gray-600 mb-8 max-w-sm leading-relaxed text-sm md:text-base">
+            Dale Honeyghan is a music artist with a message of hope, faith, and perseverance. His music uplifts, inspires, and connects people through authentic sound and powerful lyrics.
+          </p>
+          
+          <div class="flex flex-row flex-nowrap items-center gap-3">
+            <NuxtLink to="/shop" class="inline-flex shrink-0 items-center gap-2 bg-primary hover:bg-primary/90 text-white px-4 py-2.5 rounded-lg font-medium transition-colors text-sm shadow-sm whitespace-nowrap">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+              Shop Merch
+            </NuxtLink>
+            <a href="#" class="inline-flex shrink-0 items-center gap-2 bg-white border border-gray-200 hover:bg-gray-50 text-gray-800 px-4 py-2.5 rounded-lg font-medium transition-colors text-sm shadow-sm whitespace-nowrap">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              Listen to Songs
+            </a>
+            <a href="#" class="inline-flex shrink-0 items-center gap-2 bg-white border border-gray-200 hover:bg-gray-50 text-gray-800 px-4 py-2.5 rounded-lg font-medium transition-colors text-sm shadow-sm whitespace-nowrap">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+              Visit YouTube Channel
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Coming soon / placeholder -->
-    <section style="max-width:900px;margin:0 auto;padding:60px 20px;text-align:center;">
-      <div style="background:#fff;border:1.5px solid #ede5ff;border-radius:28px;padding:60px 40px;box-shadow:0 4px 24px rgba(108,43,217,0.07);">
-        <div style="font-size:3.5rem;margin-bottom:16px;">🏰</div>
-        <h2 style="font-size:1.6rem;font-weight:800;color:#111;margin:0 0 12px;">Exclusive Merch Dropping Soon</h2>
-        <p style="color:#666;font-size:1rem;line-height:1.7;max-width:480px;margin:0 auto 28px;">
-          We're putting the finishing touches on something special. Follow us on YouTube and check back for the official launch.
-        </p>
-        <a href="https://www.youtube.com/@daleam2934" target="_blank" rel="noopener noreferrer"
-          style="display:inline-flex;align-items:center;gap:10px;background:#6C2BD9;color:#fff;padding:13px 30px;border-radius:9999px;font-weight:700;font-size:0.95rem;text-decoration:none;box-shadow:0 4px 14px rgba(108,43,217,0.35);">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1C4.5 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
-          Subscribe for Updates
+    <!-- Content Sections -->
+    <section class="w-full px-4 sm:px-6 lg:px-8 mb-12 flex flex-col lg:flex-row gap-6">
+      
+      <!-- Latest Songs -->
+      <div class="lg:w-[40%] bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-gray-100">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-900">Latest Songs</h2>
+          <a href="#" class="text-primary text-sm font-semibold hover:underline flex items-center gap-1">
+            View All Songs
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+        
+        <div class="space-y-4">
+          <!-- Song Item -->
+          <div v-for="(song, index) in songs" :key="index" class="flex items-center justify-between p-2 hover:bg-gray-50 rounded-xl transition-colors group">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-gray-200 rounded-lg overflow-hidden relative flex-shrink-0">
+                <img :src="song.image" class="w-full h-full object-cover" v-if="song.image" />
+                <div v-else class="w-full h-full flex items-center justify-center text-gray-400">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.28l8-1.6V11.114A4.369 4.369 0 0015 11c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path></svg>
+                </div>
+              </div>
+              <button class="w-8 h-8 flex items-center justify-center bg-white border border-gray-200 rounded-full shadow-sm text-gray-700 hover:text-primary hover:border-primary transition-colors">
+                <svg class="w-4 h-4 ml-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="font-medium text-gray-900 truncate max-w-[150px] sm:max-w-xs">{{ song.title }}</div>
+            </div>
+            <div class="flex items-center gap-4 text-gray-500 text-sm">
+              <span>{{ song.duration }}</span>
+              <button class="p-1 hover:text-gray-900 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 110-4 2 2 0 010 4z"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Release -->
+      <div class="lg:w-[60%] bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-gray-100 flex flex-col">
+        <div class="mb-4">
+          <h2 class="text-2xl font-bold text-gray-900">Featured Release</h2>
+          <p class="text-gray-500 text-sm mt-1">The new single is out now.</p>
+        </div>
+        
+        <a href="#" class="inline-flex w-max items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg font-medium transition-colors mb-6 text-sm">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+          Watch on YouTube
         </a>
+        
+        <div class="mt-auto relative rounded-xl overflow-hidden flex items-center justify-center min-h-[220px]">
+          <img src="/stripessection.png" alt="Featured Release Stripes" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Stay Updated -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center text-gray-600 flex-shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-gray-900">Stay Updated</h3>
+            <p class="text-sm text-gray-500">Be the first to know about new music, merch, and updates.</p>
+          </div>
+        </div>
+        
+        <div class="w-full md:w-auto flex flex-col sm:flex-row items-center gap-3">
+          <input type="email" placeholder="Enter your email" class="w-full sm:w-64 px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-sm" />
+          <button class="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg font-medium transition-colors text-sm">
+            Subscribe
+          </button>
+        </div>
       </div>
     </section>
+
   </div>
 </template>
 
 <script setup>
 definePageMeta({ layout: false })
-useHead({ title: 'Merch - Fortress Designs' })
+useHead({ title: 'Official Merch - Fortress Designs' })
+
+const songs = [
+  { title: 'Stripes feat. Nevaeh Valcin', duration: '3:46', image: '/Stripes.jpeg' },
+  { title: 'Morning Train', duration: '5:28', image: '/morningtrain.png' },
+  { title: 'Seeking the Lost', duration: '4:27', image: '' },
+  { title: 'Thank You for Loving Me', duration: '3:24', image: '' },
+  { title: 'Walls feat. Shaiaye', duration: '3:27', image: '' }
+]
 </script>
