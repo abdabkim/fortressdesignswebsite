@@ -15,12 +15,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     printfulToken: process.env.PRINTFUL_TOKEN,
     public: {
-      firebaseApiKey: process.env.VITE_FIREBASE_API_KEY,
-      firebaseAuthDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN,
-      firebaseProjectId: process.env.VITE_FIREBASE_PROJECT_ID,
-      firebaseStorageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET,
-      firebaseMessagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-      firebaseAppId: process.env.VITE_FIREBASE_APP_ID,
+      firebaseApiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY,
+      firebaseAuthDomain: process.env.NUXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+      firebaseProjectId: process.env.NUXT_PUBLIC_FIREBASE_PROJECT_ID,
+      firebaseStorageBucket: process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+      firebaseMessagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+      firebaseAppId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID,
     }
   },
   vite: {
