@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  * {
+    border-color: theme('colors.border');
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .hover-elevate {
+    @apply transition-transform duration-200;
+  }
+  .hover-elevate:hover {
+    @apply -translate-y-0.5;
+  }
+  .gradient-bg-accent {
+    background: linear-gradient(135deg, #7C3AED 0%, #D946EF 100%);
+  }
+  .gradient-bg {
+    background: linear-gradient(135deg, #7C3AED 0%, #D946EF 50%, #06B6D4 100%);
+  }
+  .neon-glow {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+}
