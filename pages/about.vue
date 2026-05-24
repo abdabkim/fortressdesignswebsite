@@ -20,14 +20,14 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Where Bold Meets Quality</h2>
             <div class="space-y-4 text-gray-500">
               <p>Fortress Designs started in 2020 with a simple mission: create clothing that helps people express their unique identity without compromising on quality.</p>
-              <p>We noticed a gap in the market—streetwear that looked good but fell apart after a few washes, or quality basics that lacked personality. We decided to bridge that gap.</p>
+              <p>We noticed a gap in the clothing market that looked good but fell apart after a few washes, or quality basics that lacked personality. We decided to bridge that gap.</p>
               <p>Today, we partner with premium print-on-demand manufacturers to deliver designs that are as durable as they are distinctive. Every piece is printed with care and shipped directly to you.</p>
               <p>Fortress Designs isn't just a brand—it's a community of individuals who refuse to blend in. Welcome to the family.</p>
             </div>
           </div>
           <div class="relative">
             <div class="aspect-square rounded-2xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=600&fit=crop" alt="Fortress Designs Studio" class="w-full h-full object-cover" />
+              <img src="/store.png" alt="Fortress Designs Studio" class="w-full h-full object-cover" />
             </div>
             <div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-xl">
               <div class="text-4xl font-bold">5K+</div>

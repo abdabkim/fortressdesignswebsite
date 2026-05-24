@@ -12,7 +12,7 @@
               <span class="text-primary">Fearless</span>
             </h1>
             <p class="text-gray-600 text-lg max-w-md">
-              Premium streetwear that makes a statement. Express your unique style with our curated collection of bold, vibrant designs.
+              Premium designs that makes a statement. Express your unique style with our curated collection of bold, vibrant designs.
             </p>
             <div class="flex flex-wrap gap-4">
               <NuxtLink to="/shop">
@@ -72,7 +72,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Exclusive Products</h2>
-          <p class="text-gray-500 max-w-lg mx-auto">Discover our curated collection of premium streetwear designed for those who dare to stand out.</p>
+          <p class="text-gray-500 max-w-lg mx-auto">Discover our curated collection of premium designs for those who dare to stand out.</p>
         </div>
 
         <!-- Category filter -->
@@ -149,7 +149,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="grid grid-cols-2 gap-4">
             <div class="rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=500&fit=crop" alt="Customer Support" class="w-full h-full object-cover" />
+              <img src="/service.jpg" alt="Customer Support" class="w-full h-full object-cover" />
             </div>
             <div class="rounded-2xl overflow-hidden mt-8 hover:scale-105 transition-transform duration-300">
               <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=500&fit=crop" alt="Customer Service" class="w-full h-full object-cover" />
@@ -261,5 +261,5 @@ const handleAddToCart = (product) => {
   })
 }
 
-useHead({ title: 'Fortress Designs - Bold Streetwear', meta: [{ name: 'description', content: 'Premium streetwear for the bold and fearless.' }] })
+useHead({ title: 'Fortress Designs - Bold Designs', meta: [{ name: 'description', content: 'Premium designs for the bold and fearless.' }] })
 </script>

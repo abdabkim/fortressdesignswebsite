@@ -38,13 +38,13 @@
           <h4 class="font-semibold text-lg mb-6">Contact Us</h4>
           <ul class="space-y-4">
             <li class="flex items-center gap-3 text-gray-400">
-              <MapPin class="h-5 w-5 text-primary" /> 123 Fashion Street, NY 10001
+              <MapPin class="h-5 w-5 text-primary" /> Jamaica
             </li>
             <li class="flex items-center gap-3 text-gray-400">
-              <Phone class="h-5 w-5 text-primary" /> +1 (555) 123-4567
+              <Phone class="h-5 w-5 text-primary" /> +1 (876) 234-6399
             </li>
             <li class="flex items-center gap-3 text-gray-400">
-              <Mail class="h-5 w-5 text-primary" /> hello@fortressdesigns.com
+              <Mail class="h-5 w-5 text-primary" /> fortressdesignsco876@gmail.com
             </li>
           </ul>
         </div>
